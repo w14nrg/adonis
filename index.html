@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Adonis Decorating | Luxury Painting & Decorating – West & SW London + Mullingar & Surrounding</title>
+    <title>Adonis Decorating | Luxury Painting & Decorating – West & SW London + Mullingar</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords" content="luxury painting London, interior decorators Fulham, wallpapering Chelsea, exterior painting Hammersmith, colour consulting Mullingar, professional decorators West London">
     <meta name="description" content="Adonis Decorating – premium painting & decorating by Alex Adonis Matthews (Fulham born, 15+ years). Interior, exterior, wallpapering & bespoke finishes. West & SW London + Mullingar & surrounding. Call 07720 264 887 (UK) or 0892608865 (Ireland).">
@@ -18,22 +18,30 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- STRONG GOLD & WHITE OVERRIDES -->
+
+    <!-- PREMIUM WHITE + GOLD + CURVED EDGES -->
     <style>
         :root { --gold: #D4AF37; --darkgold: #B8860B; }
-        .text-primary, .navbar-brand, .nav-link.active, .btn-primary, .text-gold { color: var(--gold) !important; }
-        .bg-primary, .btn-primary, .bg-gold { background-color: var(--gold) !important; color: #000 !important; }
+        .text-primary, .navbar-brand, .nav-link.active, .text-gold { color: var(--gold) !important; }
+        .bg-primary, .btn-primary, .bg-gold { background-color: var(--gold) !important; color: #111 !important; }
         .btn-primary:hover { background-color: var(--darkgold) !important; }
-        .btn-outline-primary { border-color: var(--gold) !important; color: var(--gold) !important; }
-        .fact .bg-dark { background: #111 !important; }
+        .btn-gold { background-color: var(--gold) !important; color: #111 !important; border-radius: 50px !important; }
+        .btn-outline-gold { border-color: var(--gold) !important; color: var(--gold) !important; border-radius: 50px !important; }
+
+        /* CURVED EVERYTHING */
+        .card, .bg-light, .p-4, .service-item-top > div, .form-control, .testimonial-item, 
+        .owl-carousel-item > div, .navbar, .btn, .phone-block {
+            border-radius: 20px !important;
+        }
+        .overflow-hidden { border-radius: 20px !important; }
+
+        .navbar { box-shadow: 0 8px 30px rgba(0,0,0,0.08) !important; }
         .top-bar { background: #ffffff !important; }
-        .navbar { box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important; }
-        .btn-sm-square { background: white !important; color: var(--gold) !important; }
+        .phone-block { padding: 16px 20px; min-width: 220px; }
     </style>
 </head>
 <body>
@@ -43,7 +51,6 @@
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-light d-none d-lg-block">
@@ -56,18 +63,16 @@
             <div class="col-lg-9 col-md-12 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <i class="fa fa-map-marker-alt text-gold me-2"></i>
-                    <p class="m-0">West & SW London + Mullingar & Surrounding Areas</p>
+                    <p class="m-0">West & SW London • Mullingar & Surrounding Areas</p>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <i class="far fa-envelope-open text-gold me-2"></i>
                     <p class="m-0">info@adonisdecorating.com</p>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-gold me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-gold me-1" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-sm-square bg-success text-white me-0" href="https://wa.me/447720264887" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
+                    <a class="btn btn-sm-square bg-white text-gold me-1 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-gold me-1 rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-sm-square bg-gold text-white rounded-circle" href="https://wa.me/447720264887" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
@@ -89,22 +94,23 @@
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-gold d-flex align-items-center">
-                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
-                        <i class="fa fa-phone-alt text-gold"></i>
+                
+                <!-- UK & Ireland Phone Numbers with Flags -->
+                <div class="d-flex align-items-center gap-3">
+                    <!-- UK -->
+                    <div class="phone-block bg-gold text-center shadow">
+                        <div class="d-flex align-items-center justify-content-center mb-2" style="font-size: 2.8rem;">🇬🇧</div>
+                        <p class="mb-1 text-white fw-bold small">UNITED KINGDOM</p>
+                        <h5 class="m-0 text-dark fw-bold">07720 264 887</h5>
                     </div>
-                    <div class="ms-3">
-                        <p class="mb-1 text-white">🇬🇧 UK</p>
-                        <h5 class="m-0 text-dark">07720 264 887</h5>
-                    </div>
-                </div>
-                <div class="mt-4 mt-lg-0 ms-lg-3 py-3 px-4 bg-success d-flex align-items-center">
-                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
-                        <i class="fab fa-whatsapp text-success"></i>
-                    </div>
-                    <div class="ms-3">
-                        <p class="mb-1 text-white">🇮🇪 Ireland</p>
-                        <h5 class="m-0 text-white"><a href="https://wa.me/353892608865" class="text-white text-decoration-none" target="_blank">0892608865</a></h5>
+                    
+                    <!-- Ireland -->
+                    <div class="phone-block bg-gold text-center shadow">
+                        <div class="d-flex align-items-center justify-content-center mb-2" style="font-size: 2.8rem;">🇮🇪</div>
+                        <p class="mb-1 text-white fw-bold small">IRELAND</p>
+                        <h5 class="m-0 text-dark fw-bold">
+                            <a href="https://wa.me/353892608865" class="text-dark text-decoration-none" target="_blank">089 260 8865</a>
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -122,10 +128,10 @@
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Premium Painting & Decorating</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">West & SW London + Mullingar & Surrounding</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Alex Adonis Matthews (Fulham born, 15+ years experience) delivers luxury interior & exterior painting, designer wallpapering and flawless decorative finishes.</p>
-                                <a href="tel:07720264887" class="btn btn-gold py-md-3 px-md-5 me-3 animated slideInLeft">Call UK 🇬🇧 07720 264 887</a>
-                                <a href="#quote-form" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">West & SW London + Mullingar</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Alex Adonis Matthews delivers luxury interior & exterior painting, designer wallpapering and flawless decorative finishes.</p>
+                                <a href="tel:07720264887" class="btn btn-gold py-md-3 px-md-5 me-3 animated slideInLeft">Call UK 🇬🇧</a>
+                                <a href="#quote-form" class="btn btn-outline-gold py-md-3 px-md-5 animated slideInRight">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -139,9 +145,9 @@
                             <div class="col-10 col-lg-8">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Bespoke Decorating Services</h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">Luxury Finishes Across London & Ireland</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">From flawless interior repaints and designer wallpapering to stunning exterior transformations – we create beautiful, lasting spaces with precision and care.</p>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Stunning interiors, expert wallpapering and beautiful exterior transformations.</p>
                                 <a href="tel:07720264887" class="btn btn-gold py-md-3 px-md-5 me-3 animated slideInLeft">Call Now</a>
-                                <a href="#quote-form" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Get Quote</a>
+                                <a href="#quote-form" class="btn btn-outline-gold py-md-3 px-md-5 animated slideInRight">Get Quote</a>
                             </div>
                         </div>
                     </div>
@@ -155,31 +161,31 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="overflow-hidden" style="height: 300px !important;">
-                        <img class="img-fluid w-100 h-100" src="img/service-1.jpg" alt="" style="object-fit: cover !important;">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="overflow-hidden" style="height: 300px;">
+                        <img class="img-fluid w-100 h-100" src="img/service-1.jpg" alt="" style="object-fit: cover;">
                     </div>
-                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
-                        <h5 class="text-truncate me-3 mb-0">Interior Painting</h5>
-                        <a class="btn btn-square btn-outline-gold border-2 border-white flex-shrink-0" href=""><i class="fa fa-paint-roller"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="overflow-hidden" style="height: 300px !important;">
-                        <img class="img-fluid w-100 h-100" src="img/service-2.jpg" alt="" style="object-fit: cover !important;">
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
-                        <h5 class="text-truncate me-3 mb-0">Wallpapering & Features</h5>
-                        <a class="btn btn-square btn-outline-gold border-2 border-white flex-shrink-0" href=""><i class="fa fa-paint-brush"></i></a>
+                    <div class="bg-light p-4 d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">Interior Painting</h5>
+                        <a class="btn btn-outline-gold btn-square rounded-circle" href=""><i class="fa fa-paint-roller"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="overflow-hidden" style="height: 300px !important;">
-                        <img class="img-fluid w-100 h-100" src="img/service-3.jpg" alt="" style="object-fit: cover !important;">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="overflow-hidden" style="height: 300px;">
+                        <img class="img-fluid w-100 h-100" src="img/service-2.jpg" alt="" style="object-fit: cover;">
                     </div>
-                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
-                        <h5 class="text-truncate me-3 mb-0">Exterior Decorating</h5>
-                        <a class="btn btn-square btn-outline-gold border-2 border-white flex-shrink-0" href=""><i class="fa fa-palette"></i></a>
+                    <div class="bg-light p-4 d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">Wallpapering & Features</h5>
+                        <a class="btn btn-outline-gold btn-square rounded-circle" href=""><i class="fa fa-paint-brush"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="overflow-hidden" style="height: 300px;">
+                        <img class="img-fluid w-100 h-100" src="img/service-3.jpg" alt="" style="object-fit: cover;">
+                    </div>
+                    <div class="bg-light p-4 d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">Exterior Decorating</h5>
+                        <a class="btn btn-outline-gold btn-square rounded-circle" href=""><i class="fa fa-home"></i></a>
                     </div>
                 </div>
             </div>
@@ -195,11 +201,11 @@
                     <h6 class="text-gold text-uppercase">About Us</h6>
                     <h1 class="mb-4">Adonis Decorating – Luxury Painting & Decorating Experts</h1>
                     <p class="mb-4">Alex Adonis Matthews grew up in Fulham and has over 15 years of professional experience delivering high-end painting and decorating across West & SW London and Mullingar & surrounding areas in Ireland. We specialise in flawless interior & exterior painting, designer wallpapering, decorative effects and expert colour consulting. Clean, respectful, and obsessive about perfection.</p>
-                    <p class="fw-medium text-gold"><i class="fa fa-check text-success me-3"></i>Residential & commercial decorating</p>
-                    <p class="fw-medium text-gold"><i class="fa fa-check text-success me-3"></i>Luxury finishes with premium materials</p>
-                    <p class="fw-medium text-gold"><i class="fa fa-check text-success me-3"></i>Reliable service across London & Ireland</p>
+                    <p class="fw-medium text-gold"><i class="fa fa-check text-gold me-3"></i>Residential & commercial decorating</p>
+                    <p class="fw-medium text-gold"><i class="fa fa-check text-gold me-3"></i>Luxury finishes with premium materials</p>
+                    <p class="fw-medium text-gold"><i class="fa fa-check text-gold me-3"></i>Reliable service across London & Ireland</p>
                     <div class="bg-gold d-flex align-items-center p-4 mt-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px; border-radius: 50%;">
                             <i class="fa fa-phone-alt fa-2x text-gold"></i>
                         </div>
                         <div class="ms-3">
@@ -211,7 +217,7 @@
                 <div class="col-lg-6 pt-4" style="min-height: 500px;">
                     <div class="position-relative h-100 wow fadeInUp" data-wow-delay="0.5s">
                         <img class="position-absolute img-fluid w-100 h-100" src="img/about-1.jpg" style="object-fit: cover; padding: 0 0 50px 100px;" alt="">
-                        <img class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50" src="img/about-2.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50" src="img/about-2.jpg" style="object-fit: cover; border-radius: 20px;" alt="">
                     </div>
                 </div>
             </div>
@@ -252,7 +258,7 @@
     <div class="container-fluid py-5 px-4 px-lg-0">
         <div class="row g-0">
             <div class="col-lg-3 d-none d-lg-flex">
-                <div class="d-flex align-items-center justify-content-center bg-gold w-100 h-100">
+                <div class="d-flex align-items-center justify-content-center bg-gold w-100 h-100" style="border-radius: 20px;">
                     <h1 class="display-3 text-white m-0" style="transform: rotate(-90deg);">Transforming spaces since 2010</h1>
                 </div>
             </div>
@@ -264,43 +270,43 @@
                     </div>
                     <div class="owl-carousel service-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
                         <div class="bg-light p-4">
-                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px; border-radius: 50%;">
                                 <i class="fa fa-paint-roller fa-2x text-gold"></i>
                             </div>
                             <h4 class="mb-3">Interior Painting</h4>
                             <p>Flawless walls, ceilings and trim with premium paints and expert preparation.</p>
-                            <p class="text-gold fw-medium"><i class="fa fa-check text-success me-2"></i>Colour matching experts</p>
-                            <p class="text-gold fw-medium"><i class="fa fa-check text-success me-2"></i>Clean, dust-free process</p>
+                            <p class="text-gold fw-medium"><i class="fa fa-check text-gold me-2"></i>Colour matching experts</p>
+                            <p class="text-gold fw-medium"><i class="fa fa-check text-gold me-2"></i>Clean, dust-free process</p>
                             <a href="#" class="btn bg-white text-gold w-100 mt-2">Read More <i class="fa fa-arrow-right text-gold ms-2"></i></a>
                         </div>
                         <div class="bg-light p-4">
-                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px; border-radius: 50%;">
                                 <i class="fa fa-paint-brush fa-2x text-gold"></i>
                             </div>
                             <h4 class="mb-3">Wallpapering & Features</h4>
                             <p>Bespoke wallpaper installation, accent walls, textured finishes.</p>
-                            <p class="text-gold fw-medium"><i class="fa fa-check text-success me-2"></i>Precision hanging</p>
-                            <p class="text-gold fw-medium"><i class="fa fa-check text-success me-2"></i>Luxury & designer papers</p>
+                            <p class="text-gold fw-medium"><i class="fa fa-check text-gold me-2"></i>Precision hanging</p>
+                            <p class="text-gold fw-medium"><i class="fa fa-check text-gold me-2"></i>Luxury & designer papers</p>
                             <a href="#" class="btn bg-white text-gold w-100 mt-2">Read More <i class="fa fa-arrow-right text-gold ms-2"></i></a>
                         </div>
                         <div class="bg-light p-4">
-                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
-                                <i class="fa fa-shower fa-2x text-gold"></i>
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px; border-radius: 50%;">
+                                <i class="fa fa-home fa-2x text-gold"></i>
                             </div>
                             <h4 class="mb-3">Exterior Decorating</h4>
                             <p>Weatherproof painting for facades, woodwork, railings – lasting protection.</p>
-                            <p class="text-gold fw-medium"><i class="fa fa-check text-success me-2"></i>High-quality exterior paints</p>
-                            <p class="text-gold fw-medium"><i class="fa fa-check text-success me-2"></i>Full prep & priming</p>
+                            <p class="text-gold fw-medium"><i class="fa fa-check text-gold me-2"></i>High-quality exterior paints</p>
+                            <p class="text-gold fw-medium"><i class="fa fa-check text-gold me-2"></i>Full prep & priming</p>
                             <a href="#" class="btn bg-white text-gold w-100 mt-2">Read More <i class="fa fa-arrow-right text-gold ms-2"></i></a>
                         </div>
                         <div class="bg-light p-4">
-                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px; border-radius: 50%;">
                                 <i class="fa fa-palette fa-2x text-gold"></i>
                             </div>
                             <h4 class="mb-3">Colour Consulting</h4>
                             <p>Expert advice to choose the perfect palette for your space.</p>
-                            <p class="text-gold fw-medium"><i class="fa fa-check text-success me-2"></i>Personalised schemes</p>
-                            <p class="text-gold fw-medium"><i class="fa fa-check text-success me-2"></i>Sample testing</p>
+                            <p class="text-gold fw-medium"><i class="fa fa-check text-gold me-2"></i>Personalised schemes</p>
+                            <p class="text-gold fw-medium"><i class="fa fa-check text-gold me-2"></i>Sample testing</p>
                             <a href="#" class="btn bg-white text-gold w-100 mt-2">Read More <i class="fa fa-arrow-right text-gold ms-2"></i></a>
                         </div>
                     </div>
@@ -310,7 +316,7 @@
     </div>
     <!-- Service Carousel End -->
 
-    <!-- Booking Start -->
+    <!-- Booking / Quote Start -->
     <div class="container-fluid my-5 px-0">
         <div class="video wow fadeInUp" data-wow-delay="0.1s" id="quote-form">
             <h1 class="text-white mb-4">Adonis Decorating</h1>
@@ -330,7 +336,7 @@
                                     <input type="email" name="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
-                                    <textarea name="enquiry" class="form-control border-0" placeholder="Tell us about your project (rooms, style, timeline)"></textarea>
+                                    <textarea name="enquiry" class="form-control border-0" placeholder="Tell us about your project (rooms, style, timeline)" style="height: 150px;"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-gold w-100 py-3" type="submit">Send Quote Request</button>
@@ -366,7 +372,48 @@
                     <h5 class="mb-1">Emma Wilson</h5>
                     <p class="m-0">Homeowner, Fulham</p>
                 </div>
-                <!-- 3 more testimonials updated the same way -->
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">"The wallpapering in our Chelsea living room is breathtaking. Alex and his team were professional and left everything spotless."</p>
+                    </div>
+                    <div class="mb-2">
+                        <small class="fa fa-star text-gold"></small>
+                        <small class="fa fa-star text-gold"></small>
+                        <small class="fa fa-star text-gold"></small>
+                        <small class="fa fa-star text-gold"></small>
+                        <small class="fa fa-star text-gold"></small>
+                    </div>
+                    <h5 class="mb-1">James Thompson</h5>
+                    <p class="m-0">Chelsea Resident</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">"Exterior painting on our Hammersmith property looks brand new. Best decorators we've ever used – highly recommend!"</p>
+                    </div>
+                    <div class="mb-2">
+                        <small class="fa fa-star text-gold"></small>
+                        <small class="fa fa-star text-gold"></small>
+                        <small class="fa fa-star text-gold"></small>
+                        <small class="fa fa-star text-gold"></small>
+                        <small class="fa fa-star text-gold"></small>
+                    </div>
+                    <h5 class="mb-1">Sarah Patel</h5>
+                    <p class="m-0">Hammersmith</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">"Colour consultation and full decorating in Mullingar was perfect. Alex's attention to detail is second to none."</p>
+                    </div>
+                    <div class="mb-2">
+                        <small class="fa fa-star text-gold"></small>
+                        <small class="fa fa-star text-gold"></small>
+                        <small class="fa fa-star text-gold"></small>
+                        <small class="fa fa-star text-gold"></small>
+                        <small class="fa fa-star text-gold"></small>
+                    </div>
+                    <h5 class="mb-1">Michael O'Connor</h5>
+                    <p class="m-0">Mullingar</p>
+                </div>
             </div>
         </div>
     </div>
@@ -394,10 +441,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-gold mb-4">Our Services</h4>
-                    <p class="btn btn-link text-gold">Interior Painting</p>
-                    <p class="btn btn-link text-gold">Wallpapering & Feature Walls</p>
-                    <p class="btn btn-link text-gold">Exterior Decorating</p>
-                    <p class="btn btn-link text-gold">Colour Consulting</p>
+                    <a href="#" class="btn btn-link text-gold">Interior Painting</a><br>
+                    <a href="#" class="btn btn-link text-gold">Wallpapering & Feature Walls</a><br>
+                    <a href="#" class="btn btn-link text-gold">Exterior Decorating</a><br>
+                    <a href="#" class="btn btn-link text-gold">Colour Consulting</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-gold mb-4">Newsletter</h4>
@@ -422,7 +469,7 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-gold btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-gold btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -432,9 +479,6 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
