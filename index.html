@@ -23,44 +23,49 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- PREMIUM WHITE + GOLD + CURVED EDGES -->
+    <!-- STRICT WHITE + GOLD + BIG FLAGS + CURVED + NO BLUE -->
     <style>
         :root { --gold: #D4AF37; --darkgold: #B8860B; }
-        .text-primary, .navbar-brand, .nav-link.active, .text-gold { color: var(--gold) !important; }
-        .bg-primary, .btn-primary, .bg-gold { background-color: var(--gold) !important; color: #111 !important; }
-        .btn-primary:hover { background-color: var(--darkgold) !important; }
-        .btn-gold { background-color: var(--gold) !important; color: #111 !important; border-radius: 50px !important; }
-        .btn-outline-gold { border-color: var(--gold) !important; color: var(--gold) !important; border-radius: 50px !important; }
+        
+        /* KILL EVERY TRACE OF BLUE */
+        .text-primary, .nav-link, .navbar-light .navbar-nav .nav-link, .btn-primary, 
+        .bg-primary, .bg-success, .text-success, .btn-success { 
+            color: var(--gold) !important; 
+        }
+        .bg-primary, .btn-primary, .bg-success { 
+            background-color: var(--gold) !important; 
+        }
 
         /* CURVED EVERYTHING */
-        .card, .bg-light, .p-4, .service-item-top > div, .form-control, .testimonial-item, 
-        .owl-carousel-item > div, .navbar, .btn, .phone-block {
-            border-radius: 20px !important;
+        .navbar, .bg-light, .p-4, .card, .btn, .phone-box, .overflow-hidden, 
+        .form-control, .testimonial-item, .owl-carousel-item > div {
+            border-radius: 22px !important;
         }
-        .overflow-hidden { border-radius: 20px !important; }
 
-        .navbar { box-shadow: 0 8px 30px rgba(0,0,0,0.08) !important; }
-        .top-bar { background: #ffffff !important; }
-        .phone-block { padding: 16px 20px; min-width: 220px; }
+        /* COMPACT HEADER */
+        .navbar { padding: 8px 0 !important; box-shadow: 0 6px 25px rgba(0,0,0,0.07) !important; }
+
+        /* BIG PROMINENT FLAGS */
+        .flag { font-size: 3.8rem; line-height: 1; margin-right: 15px; }
+        .phone-box { min-width: 220px; transition: all 0.3s; }
+        .phone-box:hover { transform: translateY(-3px); }
     </style>
 </head>
 <body>
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-gold" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+        <div class="spinner-border text-gold" style="width: 3rem; height: 3rem;" role="status"></div>
     </div>
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-light d-none d-lg-block">
-        <div class="row align-items-center top-bar">
-            <div class="col-lg-3 col-md-12 text-center text-lg-start">
+        <div class="row align-items-center">
+            <div class="col-lg-3 text-center text-lg-start">
                 <a href="" class="navbar-brand m-0 p-0">
                     <h2 class="text-gold m-0">Adonis Decorating</h2>
                 </a>
             </div>
-            <div class="col-lg-9 col-md-12 text-end">
+            <div class="col-lg-9 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <i class="fa fa-map-marker-alt text-gold me-2"></i>
                     <p class="m-0">West & SW London • Mullingar & Surrounding Areas</p>
@@ -81,8 +86,8 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid nav-bar bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
-            <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4">
+            <a href="" class="navbar-brand d-lg-none">
                 <h1 class="text-gold m-0">Adonis Decorating</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -95,22 +100,26 @@
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 
-                <!-- UK & Ireland Phone Numbers with Flags -->
+                <!-- BIG FLAGS + NO GB/IE LETTERS -->
                 <div class="d-flex align-items-center gap-3">
-                    <!-- UK -->
-                    <div class="phone-block bg-gold text-center shadow">
-                        <div class="d-flex align-items-center justify-content-center mb-2" style="font-size: 2.8rem;">🇬🇧</div>
-                        <p class="mb-1 text-white fw-bold small">UNITED KINGDOM</p>
-                        <h5 class="m-0 text-dark fw-bold">07720 264 887</h5>
+                    <!-- UK with Union Jack -->
+                    <div class="phone-box bg-gold text-dark p-3 d-flex align-items-center shadow-sm">
+                        <span class="flag">🇬🇧</span>
+                        <div>
+                            <p class="mb-1 text-white small fw-bold">United Kingdom</p>
+                            <h5 class="m-0 fw-bold">07720 264 887</h5>
+                        </div>
                     </div>
                     
-                    <!-- Ireland -->
-                    <div class="phone-block bg-gold text-center shadow">
-                        <div class="d-flex align-items-center justify-content-center mb-2" style="font-size: 2.8rem;">🇮🇪</div>
-                        <p class="mb-1 text-white fw-bold small">IRELAND</p>
-                        <h5 class="m-0 text-dark fw-bold">
-                            <a href="https://wa.me/353892608865" class="text-dark text-decoration-none" target="_blank">089 260 8865</a>
-                        </h5>
+                    <!-- Ireland with Irish Flag -->
+                    <div class="phone-box bg-gold text-dark p-3 d-flex align-items-center shadow-sm">
+                        <span class="flag">🇮🇪</span>
+                        <div>
+                            <p class="mb-1 text-white small fw-bold">Ireland</p>
+                            <h5 class="m-0 fw-bold">
+                                <a href="https://wa.me/353892608865" class="text-dark text-decoration-none" target="_blank">089 260 8865</a>
+                            </h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -167,7 +176,7 @@
                     </div>
                     <div class="bg-light p-4 d-flex align-items-center justify-content-between">
                         <h5 class="mb-0">Interior Painting</h5>
-                        <a class="btn btn-outline-gold btn-square rounded-circle" href=""><i class="fa fa-paint-roller"></i></a>
+                        <a class="btn btn-outline-gold btn-square rounded-circle" href=""><i class="fa fa-paint-roller fa-2x"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -176,7 +185,7 @@
                     </div>
                     <div class="bg-light p-4 d-flex align-items-center justify-content-between">
                         <h5 class="mb-0">Wallpapering & Features</h5>
-                        <a class="btn btn-outline-gold btn-square rounded-circle" href=""><i class="fa fa-paint-brush"></i></a>
+                        <a class="btn btn-outline-gold btn-square rounded-circle" href=""><i class="fa fa-paint-brush fa-2x"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -185,7 +194,7 @@
                     </div>
                     <div class="bg-light p-4 d-flex align-items-center justify-content-between">
                         <h5 class="mb-0">Exterior Decorating</h5>
-                        <a class="btn btn-outline-gold btn-square rounded-circle" href=""><i class="fa fa-home"></i></a>
+                        <a class="btn btn-outline-gold btn-square rounded-circle" href=""><i class="fa fa-home fa-2x"></i></a>
                     </div>
                 </div>
             </div>
@@ -258,7 +267,7 @@
     <div class="container-fluid py-5 px-4 px-lg-0">
         <div class="row g-0">
             <div class="col-lg-3 d-none d-lg-flex">
-                <div class="d-flex align-items-center justify-content-center bg-gold w-100 h-100" style="border-radius: 20px;">
+                <div class="d-flex align-items-center justify-content-center bg-gold w-100 h-100" style="border-radius: 22px;">
                     <h1 class="display-3 text-white m-0" style="transform: rotate(-90deg);">Transforming spaces since 2010</h1>
                 </div>
             </div>
@@ -316,7 +325,7 @@
     </div>
     <!-- Service Carousel End -->
 
-    <!-- Booking / Quote Start -->
+    <!-- Booking Start -->
     <div class="container-fluid my-5 px-0">
         <div class="video wow fadeInUp" data-wow-delay="0.1s" id="quote-form">
             <h1 class="text-white mb-4">Adonis Decorating</h1>
